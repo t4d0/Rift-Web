@@ -2,8 +2,9 @@
 
 
 Rift-Web is an older, slightly modified version of RiftFN's frontend ported on to a github pages site.
+(also note alot of things with the frontend's visuals are broken, if 
 
-*For more info regarding credits, visit the info tab at http://rift.ml/*
+*For more info regarding credits, visit the info tab at http://www.rift.ml/*
 
 ## HTTPS://DISCORD.GG/RIFTFN
 
