@@ -1,0 +1,103 @@
+#mods-page .header {
+    background: var(--background-secondary);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    z-index: 3;
+}
+
+.header .container {
+    position: relative;
+    padding: 19px 13.5px;
+    cursor: pointer;
+    user-select: none;
+    color: var(--foreground);
+    opacity: 0.5;
+    font-weight: bold;
+    transform: scale(0.95);
+    transition: opacity .3s, transform .4s;
+}
+.header .container.active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity .3s, transform .4s;
+}
+.checkmark {
+    position: absolute;
+    height: 1px;
+    width: 25px;
+    margin-top: 32px;
+    margin-left: -50%;
+    transform: scaleX(0);
+    transition: .4s;
+}
+.container input[type='radio'] {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    width: 0;
+    margin: 0;
+    height: 0;
+}
+.container input[type='radio']:checked {
+    color: var(--foreground);
+}
+.container input[type='radio']:checked ~ .checkmark {
+    background-color: var(--foreground);
+    transform: scaleX(1);
+    transition: .2s;
+}
+
+#myMods {
+    display: flex;
+    flex-direction: column;
+}
+
+.mod {
+    background: var(--background-secondary);
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    margin: 15px 20px 0;
+}
+.mod .mod-header {
+    padding: 11px 16px;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.mod .mod-header img {
+    width: 50px;
+    height: 50px;
+    margin-right: 12px;
+    border-radius: 7px;
+}
+.mod .mod-header h1 {
+    font-size: 17px;
+    margin-top: 2px;
+}
+.mod .mod-header h1 span {
+    opacity: 0.5;
+    font-weight: normal;
+    font-size: 16px;
+    padding-left: 1px;
+}
+.mod .mod-header h3 {
+    font-size: 14px;
+    opacity: 0.5;
+    margin-top: -2px;
+}
+.mod .mod-header .switch {
+    margin-left: auto;
+}
+.mod .mod-body {
+    background: var(--interactive);
+    padding: 15px;
+}
+.mod .mod-body h3 {
+    font-size: 14px;
+}
