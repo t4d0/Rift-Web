@@ -1,4 +1,4 @@
-# Rift-Web
+# Rift Web 🔹
 
 
 Rift-Web is an older, slightly modified version of RiftFN's frontend ported on to a github pages site.
